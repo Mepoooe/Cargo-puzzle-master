@@ -1,0 +1,10 @@
+
+services:
+  cargo-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cargo-app
+    volumes:
+      - ../:/app
+    working_dir: /app

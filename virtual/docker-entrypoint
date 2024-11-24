@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "All things have been done! I am ready to work..."
+
+while sleep 60; do
+  echo "working" > /dev/null
+done
+
+exec "$@"
